@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact us</title>
+</head>
+<body>
+    <nav>
+       <a href="home%20index.html">HOME</a> |
+       <a href="projek2%20index.html">CV</a> |
+       <a href="projek 4 index.html">KONTAK</a> |
+       <a href="about me index.html">about Me</a> |
+    </nav>
+    <style>
+        body {
+            background-image: url(kontak.jpg);
+            background-size: cover;
+            color: black
+        }
+    </style>
+    <form action="contact.php" method="post">
+        <fieldset>
+            <legend>Contact Us</legend>
+            <p><label for="nama">Nama:</label>
+                <input type="text" placeholder="your name" name="yourname"></p>
+            <p><label for="email">Email:</label>
+                <input type="text" placeholder="your email" name="email"></p>
+            <p><label for="subject">subject:</label>
+                <textarea id="pesan" name="pesan" cols="30" rows="10"></textarea></p>
+            <p><input type="submit" value="send"></p>
+             
+</body>
+</html>
