@@ -4,16 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOME</title>
+
     <style>
+
         body {
-            margin: 0;
-            padding-top: 70px;
-            background-image: url('home.jpg');
+            background-image: url('backgrond.jpg');
             background-size: cover;
-            background-position: center;
-            font-family: Arial, sans-serif;
-            text-align: center;
+           
         }
+       
+            .custom-cursor{
+                width: 20px;
+                height: 20px;
+                background-image: url('kursor-removebg-preview.png');
+                background-size: cover;
+                position: absolute;
+                pointer-events: none;
+                counter-set: unset;
+                transform: translate(-50%, -50%);
+                transition: width 0.2s ease, height 0.2s ease, background-color 0.2s ease, border 0.2s ease;
+            }
         nav {
             position: fixed;
             top: 0;
@@ -21,32 +31,39 @@
             transform: translateX(-50%);
             width: fit-content;
             background-color: #333;
-            padding: 10px 20px;
-            border-radius: 0 0 10px 10px;
+            padding: 10px;
+            text-align: center;
+            border-radius: 8px;
         }
+
         nav a {
-            color: #fff;
+            color: white;
             text-decoration: none;
-            margin: 0 8px;
-            font-weight: bold;
+            margin: 0 5px;
         }
-        nav a:hover { text-decoration: underline; }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+        
     </style>
 </head>
+
 <body>
+
     <nav>
-        <a href="index.html">HOME</a>
-        <a href="projek 2 index.html">CV</a>
-        <a href="projek 4 index.html">KONTAK</a>
-        <a href="about me index.html">ABOUT ME</a>
+        <a href="home.html">HOME</a> |
+        <a href="cv.html">CV</a> |
+        <a href="kontak.html">KONTAK</a> |
+        <a href="aboutme.html">About Me</a>
     </nav>
 
     <h1>WELCOME TO MY HOMEPAGE</h1>
-    <p>Saya Rafael Satamali, siswa PPLG kelas X di SMK Bali Dewata.</p>
-    <p>Saya sedang belajar HTML.</p>
-    <p>Saya masih baru di dunia website.</p>
-    <p>Terima kasih telah berkunjung ke halaman ini.</p>
+    <p>Saya Rafael Satamali siswa PPLG kelas X di SMK Bali Dewata</p>
+    <p>Saya sedang belajar HTML</p>
+    <p>Saya masih baru di dunia website</p>
+    <p>Terima kasih telah berkunjung ke halaman ini</p>
+<div class="custom-cursor"></div>
+<script src="script.js"></script>
 </body>
 </html>
-
-
